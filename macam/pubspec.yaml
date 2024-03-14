@@ -1,0 +1,18 @@
+name: macam
+description: Flutter plugin that lets you display native WebView on macOS
+version: 0.0.1
+homepage: https://github.com/vanelizarov/macam
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      macos:
+        pluginClass: MacamPlugin
