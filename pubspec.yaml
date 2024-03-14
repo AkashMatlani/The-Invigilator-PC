@@ -1,0 +1,101 @@
+publish_to: none
+name: invigilatorpc
+description: The Invigilator PC
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  record: ^4.4.4
+  path_provider: ^2.1.0
+  permission_handler: ^10.4.3
+  cupertino_icons: ^1.0.5
+  flutter_easyloading: ^3.0.5
+  provider: ^6.0.5
+  animated_text_kit: ^4.2.2
+  another_flushbar: ^1.12.30
+  url_launcher: ^6.1.12
+  dio: ^5.3.2
+  flutter_dotenv: ^5.1.0
+  hive_flutter: ^1.1.0
+  camera_windows: ^0.2.1+1
+  dotted_border: ^2.0.0+3
+  wc_form_validators: ^1.0.0
+  geolocator: ^10.0.0
+  fdottedline_nullsafety: ^2.0.1
+  sentry_flutter: ^7.9.0
+  flutter_desktop_audio_recorder: ^0.0.1
+  fast_cached_network_image: ^1.2.0
+  flutter_launcher_icons: ^0.13.1
+  location: ^5.0.2+1
+  window_manager: ^0.3.6
+  device_info_plus: ^8.0.0
+  screen_capturer: ^0.1.6
+  image_compression: ^1.0.4
+  simple_connection_checker: ^0.2.1
+  wakelock: ^0.6.2
+  audioplayers: ^5.1.0
+  intl: ^0.18.1
+  video_compress: ^3.1.2
+  battery_plus: ^4.0.2
+  screen_brightness: ^0.2.2+1
+
+  macam:
+    path: ./macam/
+
+  aws_s3_upload:
+      path: ./aws_s3_custom/
+  # location:
+  #   path: ./location-custom/
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  msix: ^3.16.1
+  dependency_validator: ^3.2.2
+
+msix_config:
+  display_name: The Invigilator PC
+  publisher_display_name: The Invigilator (Pty) Ltd
+  identity_name: BackAlleyTechnology.TheInvigilatorPC
+  languages: en-us
+  msix_version: 1.7.0.0
+  publisher: CN=092CD260-FCE3-4373-ACE6-80F38F2F49B1
+  logo_path: D:\GitLabInvigilatorWIndows\invigilator-pc\build\windows\runner\Release\data\flutter_assets\assets\images\owl.png
+  start_menu_icon_path: D:\GitLabInvigilatorWIndows\invigilator-pc\build\windows\runner\Release\data\flutter_assets\assets\images\owl.png
+  tile_icon_path: D:\GitLabInvigilatorWIndows\invigilator-pc\build\windows\runner\Release\data\flutter_assets\assets\images\owl.png
+  icons_background_color: transparent
+  capabilities: 'internetClient,location,microphone,webcam'
+#  certificate_path: C:\Program Files\OpenSSL-Win64\bin\CERTIFICATE.pfx
+#  certificate_password: test
+
+
+flutter_icons:
+  windows:
+    generate: true
+    image_path: "assets/images/owl.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+    macos:
+      generate: true
+      image_path: "assets/images/owl.png"
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - .env
+    - assets/atiumd6da/atiumd6a.dll
+
+  fonts:
+    - family: Neufreit
+      fonts:
+       - asset: fonts/Neufreit.otf
